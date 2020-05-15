@@ -1,5 +1,3 @@
-Cách chia subnet
-
 Dạng 1: Địa chỉ ip không là subnet
 Vd: 203.162.48.0/24 chia 6 subnet
 class c => 24 bit net (subnet=0)
