@@ -1,0 +1,31 @@
+Cách chia subnet
+
+Dạng 1: Địa chỉ ip không là subnet
+Vd: 203.162.48.0/24 chia 6 subnet
+class c => 24 bit net (subnet=0)
+có 32-24 = 8 bit host
+chia 6 subnet => mượn 3 bit
+còn lại 5 bit host => bước nhảy 2^5 = 32
+subnet mask 24+3 = 27
+subnet 1: 203.162.48.0/27 -> 203.162.48.31/27
+subnet 2: 203.162.48.32/27 -> 203.162.48.63/27
+subnet 3: 203.162.48.64/27 -> 203.162.48.95/27
+subnet 4: 203.162.48.96/27 -> 203.162.48.127/27
+subnet 5: 203.162.48.128/27 -> 203.162.48.159/27
+subnet 6: 203.162.48.160/27 -> 203.162.48.191/27
+
+Dạng 2: Địa chỉ ip là một subnet
+Vd: 172.29.32.0/19 chia 6 subnet
+class b => 16 bit net
+có 19-16 = 3 bit subnet
+có 32-19 = 13 bit host
+chia 6 subnet => mượn 3 bit
+còn lại 10 bit host
+trong đó có 2 bit ở byte số 3 => bước nhảy 2^2 = 4
+subnet mask 19+3 = 22
+subnet 1: 172.29.32.0/22 -> 172.29.35.255/22
+subnet 2: 172.29.36.0/22 -> 172.29.39.255/22
+subnet 3: 172.29.40.0/22 -> 172.29.43.255/22
+subnet 4: 172.29.44.0/22 -> 172.29.47.255/22
+subnet 5: 172.29.48.0/22 -> 172.29.51.255/22
+subnet 6: 172.29.52.0/22 -> 172.29.55.255/22
