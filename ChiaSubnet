@@ -1,4 +1,4 @@
-Dạng 1: Địa chỉ ip không là subnet
+Dạng 1: Địa chỉ ip của đường mạng chính
 Vd: 203.162.48.0/24 chia 6 subnet
 class c => 24 bit net (subnet=0)
 có 32-24 = 8 bit host
@@ -12,7 +12,7 @@ subnet 4: 203.162.48.96/27 -> 203.162.48.127/27
 subnet 5: 203.162.48.128/27 -> 203.162.48.159/27
 subnet 6: 203.162.48.160/27 -> 203.162.48.191/27
 
-Dạng 2: Địa chỉ ip là một subnet
+Dạng 2: Địa chỉ ip của đường mạng con
 Vd: 172.29.32.0/19 chia 6 subnet
 class b => 16 bit net
 có 19-16 = 3 bit subnet
