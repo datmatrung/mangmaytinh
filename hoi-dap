@@ -10,7 +10,7 @@
 2. Vì sao DNS ví như một hệ CSDL phân tán ?
 - Vì trên thế giới có rất nhiều DNS server nằm rải rác khắp nơi
 - Mỗi DNS server quản lý một cây domain khác nhau
-- Chúng truy vấn với nhau để phân giải địa chỉ ip cho người dùng
+- Chúng truy vấn với nhau để phân giải tên ra địa chỉ ip cho người dùng.
 
 3. DNS dùng cơ chế gì để tăng tốc quá trình phân giải tên ra địa chỉ ip ?
 - DNS server sau khi trả lời câu hỏi về việc phân giải tên ra địa chỉ ip,
