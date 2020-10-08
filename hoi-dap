@@ -1,0 +1,32 @@
+1. Quá trình phân giải www.mathdept.rmit.edu.vn ra địa chỉ ip ?
+- PC nhờ Local dns server phân giải www.mathdept.rmit.edu.vn
+- Local hỏi máy chủ root và nhận được câu trả lời là địa chỉ ip của .vn
+- Local hỏi máy chủ .vn và nhận được câu trả lời là địa chỉ ip của .edu.vn
+- Local hỏi máy chủ .edu.vn và nhận được câu trả lời là địa chỉ ip của .rmit.edu.vn
+- Local hỏi máy chủ .rmit.edu.vn và nhận được câu trả lời là địa chỉ ip của .mathdept.rmit.edu.vn
+- Local hỏi máy chủ .mathdept.rmit.edu.vn và nhận được câu trả lời là địa chỉ ip của www.mathdept.rmit.edu.vn
+- Local trả lời cho PC địa chỉ ip của www.mathdept.rmit.edu.vn
+
+2. Vì sao DNS ví như một hệ CSDL phân tán ?
+- Vì trên thế giới có rất nhiều DNS server nằm rải rác khắp nơi
+- Mỗi DNS server quản lý một cây domain khác nhau
+- Chúng truy vấn với nhau để phân giải địa chỉ ip cho người dùng
+
+3. DNS dùng cơ chế gì để tăng tốc quá trình phân giải tên ra địa chỉ ip ?
+- DNS server sau khi trả lời câu hỏi về việc phân giải tên ra địa chỉ ip,
+- Nó sẽ lưu tạm vào bộ nhớ cache trong một khoảng thời gian nào đó. 
+- Nếu có người dùng hỏi lại tên đó, thì DNS server đó sẽ trả lời ngay.
+
+4. Tại sao DNS chọn UDP để thực hiện vấn tin ?
+- Vì người dùng cần tốc độ nhanh để phân giải tên ra địa chỉ ip khi lướt web.
+
+5. Công dụng của Switch và Router ?
+- Switch dùng để kết nối nhiều đoạn mạng với nhau trong cùng một network mà không làm tăng collision domain.
+- Hai máy liên lạc với nhau trong cùng đoạn mạng thì gói tin sẽ bị chặn lại khi đến switch.
+- Hai máy khác đoạn mạng khi liên lạc với nhau thì switch mới cho gói tin đi qua.
+- Còn Router dùng để kết nối nhiều network với nhau. 
+- Khi hai máy khác network liên lạc với nhau thì router sẽ định tuyến để tìm con đường đi ngắn nhất cho gói tin đi qua.
+
+6. Khi nào thì viết ứng dụng mạng dùng TCP, khi nào thì viết ứng dụng mạng dùng UDP ?
+- Khi ứng dụng mạng cần độ chính xác cao thì dùng TCP.
+- Khi ứng dụng mạng cần tốc độ truyền dữ liệu nhanh, ứng dụng có thể chịu đựng được lỗi khi hư gói hoặc mất gói tin thì dùng UDP.
