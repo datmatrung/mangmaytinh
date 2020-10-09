@@ -1,4 +1,4 @@
-1. Quá trình phân giải www.mathdept.rmit.edu.vn ra địa chỉ ip theo truy vấn tuần tự ?
+1. Quá trình phân giải www.mathdept.rmit.edu.vn ra địa chỉ ip theo kiểu truy vấn tuần tự ?
 - Client hỏi Local DNS server phân giải tên www.mathdept.rmit.edu.vn ra địa chỉ ip
 - Local hỏi máy chủ root và nhận được câu trả lời là địa chỉ ip của .vn
 - Local hỏi máy chủ .vn và nhận được câu trả lời là địa chỉ ip của .edu.vn
@@ -6,7 +6,7 @@
 - Local hỏi máy chủ .rmit.edu.vn và nhận được câu trả lời là địa chỉ ip của www.mathdept.rmit.edu.vn
 - Local trả lời cho client địa chỉ ip của www.mathdept.rmit.edu.vn
 
-  Quá trình phân giải www.mathdept.rmit.edu.vn ra địa chỉ ip theo truy vấn đệ quy ?
+  Quá trình phân giải www.mathdept.rmit.edu.vn ra địa chỉ ip theo kiểu truy vấn đệ quy ?
 - Client hỏi local DNS server phân giải tên www.mathdept.rmit.edu.vn ra địa chỉ ip
 - Máy chủ local hỏi máy chủ root phân giải tên này ra địa chỉ ip
 - Máy chủ root hỏi máy chủ .vn phân giải tên này ra địa chỉ ip
