@@ -49,3 +49,12 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 8. Các dịch vụ ở tầng transport:
 - TCP: Dịch vụ hướng kết nối, truyền dữ liệu đáng tin cậy. Nhược điểm: chậm, hai thiết bị phải kết nối với nhau trước khi chuyển dữ liệu.
 - UDP: Dịch vụ phi kết nối, truyền dữ liệu không tin cậy. Ưu điểm: nhanh, hai thiết bị không cần phải kết nối với nhau.
+
+9. Trình bày chức năng của mỗi tầng trong mô hình OSI giải quyết những vấn đề gì của một quá trình truyền thông ?
+- Tầng vật lý (Physical): Chuyển tín hiệu nhị phân thành tín hiệu điện lên môi trường truyền dẫn.
+- Tầng liên kết (Data link): Gửi và nhận gói tin giữa hai thiết bị trong cùng một mạng (link to link).
+- Tầng mạng (Network): Gửi và nhận gói tin giữa hai thiết bị ở hai mạng khác nhau (host to host).
+- Tầng vận chuyển (Transport): Gửi và nhận gói tin giữa hai ứng dụng trên mạng (end to end).
+- Tầng phiên (Session): Quản lý phiên kết nối giữa hai đối tượng trên mạng.
+- Tầng trình bày (Presentation): Chuyển đổi bộ mã ký tự, cấu trúc dữ liệu, nén và giải nén, mã hóa và giải mã.
+- Tầng ứng dụng (Application): Giải quyết nhu cầu của người dùng với những dịch vụ, ứng dụng trên mạng được thực hiện bởi các protocol.
