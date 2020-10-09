@@ -1,7 +1,7 @@
 Chia 172.29.64.0/21 thành 2 subnet có 500ip, 1 subnet co 100ip, 2 subnet có 50ip
 Ta mượn 2 bit ở phần host để chia 4 subnet => phần host ở byte số 3 còn 1 bit => bước nhảy 2^1=2
 Ta được 4 subnet: 172.29.64.0/23, 172.29.66.0/23, 172.29.68.0/23, 172.29.70.0/23
-Ta tiếp tục chia đường mạng 172.29.70.0/23 thành 2 subnet nữa:
+Ta tiếp tục chia đường mạng 172.29.70.0/23 thành 2 subnet:
 Ta mượn 1 bit ở phần host để chia 2 subnet => phần host ở byte số 3 còn 0 bit => bước nhảy 2^0=1
 Ta được 2 subnet: 172.29.70.0/24 và 172.29.71.0/24
 		Địa chỉ đường mạng	Địa chỉ broadcast	Địa chỉ host hợp lệ
@@ -10,3 +10,16 @@ Subnet 2: 	172.29.66.0/23		172.29.67.255/23	172.29.66.1/23 - 172.29.67.254/23 (t
 Subnet 3: 	172.29.68.0/23		172.29.69.255/23	172.29.68.1/23 - 172.29.69.254/23 (thỏa 100ip)
 Subnet 4: 	172.29.70.0/24		172.29.70.255/24	172.29.70.1/24 - 172.29.70.254/24 (thỏa 50ip)
 Subnet 5: 	172.29.71.0/24		172.29.71.255/24	172.29.71.1/24 - 172.29.71.254/24 (thỏa 50ip)
+
+Chia địa chỉ 203.168.30.0/25 thành 2 subnet có 30ip, 1 subnet có 20ip, 2 subnet có 10ip
+Ta mượn 2 bit ở phần host để chia 4 subnet => phần host ở byte số 4 còn 5 bit => bước nhảy 2^5 = 32
+Ta được 4 subnet: 203.168.30.0/27, 203.168.30.32/27, 203.168.30.64/27, 203.168.30.96/27
+Ta tiếp tục chia đường mạng 203.168.30.96/27 thành 2 subnet:
+Ta mượn 1 bit ở phần host để chia 2 subnet => phần host ở byte số 4 còn 4 bit => bước nhảy 2^4 = 16
+Ta được 2 subnet: 203.168.30.96/28 và 203.168.30.112/28
+		Địa chỉ network		Địa chỉ broadcast		Địa chỉ host hợp lệ
+Subnet 1:	203.168.30.0/27		203.168.30.31/27	203.168.30.1/27 - 203.168.30.30/27 (thỏa 30ip)
+Subnet 2:	203.168.30.32/27	203.168.30.63/27	203.168.30.33/27 - 203.168.30.62/27 (thỏa 30ip)
+Subnet 3:	203.168.30.64/27	203.168.30.95/27	203.168.30.65/27 - 203.168.30.94/27 (thỏa 20ip)
+Subnet 4:	203.168.30.96/28	203.168.30.111/28	203.168.30.97/28 - 203.168.30.110/28 (thỏa 10ip)
+Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126/28 (thỏa 10ip)
