@@ -19,6 +19,8 @@
 
 4. Tại sao DNS chọn UDP để thực hiện vấn tin ?
 - Vì người dùng cần tốc độ nhanh để phân giải tên ra địa chỉ ip khi lướt web.
+- Tại sao DNS chọn TCP để thực hiện backup dữ liệu ?
+- Vì khi DNS server backup dữ liệu cần độ chính xác cao.
 
 5. Công dụng của Switch và Router ?
 - Switch dùng để kết nối nhiều đoạn mạng với nhau trong cùng một network mà không làm tăng collision domain.
