@@ -17,7 +17,7 @@ Ta được 4 subnet: 203.168.30.0/27, 203.168.30.32/27, 203.168.30.64/27, 203.1
 Ta tiếp tục chia đường mạng 203.168.30.96/27 thành 2 subnet:
 Ta mượn 1 bit ở phần host để chia 2 subnet => phần host ở byte số 4 còn 4 bit => bước nhảy 2^4 = 16
 Ta được 2 subnet: 203.168.30.96/28 và 203.168.30.112/28
-		Địa chỉ network		Địa chỉ broadcast		Địa chỉ host hợp lệ
+		Địa chỉ network		Địa chỉ broadcast	Địa chỉ host hợp lệ
 Subnet 1:	203.168.30.0/27		203.168.30.31/27	203.168.30.1/27 - 203.168.30.30/27 (thỏa 30ip)
 Subnet 2:	203.168.30.32/27	203.168.30.63/27	203.168.30.33/27 - 203.168.30.62/27 (thỏa 30ip)
 Subnet 3:	203.168.30.64/27	203.168.30.95/27	203.168.30.65/27 - 203.168.30.94/27 (thỏa 20ip)
