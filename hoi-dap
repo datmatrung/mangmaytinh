@@ -54,3 +54,9 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Tầng phiên (Session): Quản lý phiên kết nối giữa hai đối tượng trên mạng.
 - Tầng trình bày (Presentation): Chuyển đổi bộ mã ký tự, cấu trúc dữ liệu, nén và giải nén, mã hóa và giải mã.
 - Tầng ứng dụng (Application): Giải quyết nhu cầu của người dùng với những dịch vụ, ứng dụng trên mạng được thực hiện bởi các protocol.
+
+9. Trình bày sự tương quan giữa mỗi tầng trong mô hình nghi thức TCP/IP và mô hình OSI ?
+- Tầng Application trong mô hình TCP/IP tương đương với 3 tầng Application, Presentation, Session trong mô hình OSI.
+- Tầng Transport trong mô hình TCP/IP tương đương với tầng Transport trong mô hình OSI.
+- Tầng Internet trong mô hình TCP/IP tương đương với tầng Network trong mô hình OSI.
+- Tầng Network Interface trong mô hình TCP/IP tương đương với 2 tầng Data link và Physical trong mô hình OSI.
