@@ -1,10 +1,22 @@
-1. Quá trình phân giải www.mathdept.rmit.edu.vn ra địa chỉ ip ?
+1. Quá trình phân giải www.mathdept.rmit.edu.vn ra địa chỉ ip theo truy vấn tuần tự ?
 - Client hỏi Local DNS server phân giải tên www.mathdept.rmit.edu.vn ra địa chỉ ip
 - Local hỏi máy chủ root và nhận được câu trả lời là địa chỉ ip của .vn
 - Local hỏi máy chủ .vn và nhận được câu trả lời là địa chỉ ip của .edu.vn
 - Local hỏi máy chủ .edu.vn và nhận được câu trả lời là địa chỉ ip của .rmit.edu.vn
 - Local hỏi máy chủ .rmit.edu.vn và nhận được câu trả lời là địa chỉ ip của www.mathdept.rmit.edu.vn
 - Local trả lời cho client địa chỉ ip của www.mathdept.rmit.edu.vn
+
+  Quá trình phân giải www.mathdept.rmit.edu.vn ra địa chỉ ip theo truy vấn đệ quy ?
+- Client hỏi local DNS server phân giải tên www.mathdept.rmit.edu.vn ra địa chỉ ip
+- Máy chủ local hỏi máy chủ root phân giải tên này ra địa chỉ ip
+- Máy chủ root hỏi máy chủ .vn phân giải tên này ra địa chỉ ip
+- Máy chủ .vn hỏi máy chủ .edu.vn phân giải tên này ra địa chỉ ip
+- Máy chủ .edu.vn hỏi máy chủ .rmit.edu.vn phân giải tên này ra địa chỉ ip
+- Máy chủ .rmit.edu.vn trả lời máy chủ .edu.vn địa chỉ ip của tên này
+- Máy chủ .edu.vn trả lời máy chủ .vn địa chỉ ip của tên này
+- Máy chủ .vn trả lời máy chủ root địa chỉ ip của tên này
+- Máy chủ root trả lời máy chủ local địa chỉ ip của tên này
+- Máy chủ loacl trả lời client địa chỉ ip của tên này
 
 2. Vì sao DNS ví như một hệ CSDL phân tán ?
 - Vì trên thế giới có rất nhiều DNS server nằm rải rác khắp nơi
