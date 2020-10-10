@@ -71,3 +71,9 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Tầng Transport trong mô hình TCP/IP tương đương với tầng Transport trong mô hình OSI.
 - Tầng Internet trong mô hình TCP/IP tương đương với tầng Network trong mô hình OSI.
 - Tầng Network Interface trong mô hình TCP/IP tương đương với 2 tầng Data link và Physical trong mô hình OSI.
+
+10. Trình bày ý nghĩa của hai tầng con LLC và MAC của tầng Data Link ?
+- Tầng MAC chính là driver của card mạng, có nhiệm vụ xuất nhập dữ liệu từ card mạng lên đường dây cáp mạng,
+  hay còn gọi là truy cập đường truyền (Media Access Control)
+- Tầng LLC là bộ thư viện gồm những thủ tục và hàm. Mỗi card mạng có công nghệ mạng khác nhau
+  nên tầng LLC có nhiệm vụ giúp cho nghi thức ở tầng network tương tác với tầng MAC (Logical Link Control)
