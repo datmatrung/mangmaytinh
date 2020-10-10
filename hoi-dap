@@ -84,10 +84,10 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - DHCP: Dynamic Host Configuration Protocol
 - DHCP hoạt động ở tầng ứng dụng, sử dụng giao thức hoạt động ở tầng Transport là UDP
 - DHCP Server nằm ở modem ADSL, sử dụng port 67, cung cấp địa chỉ thông tin cấu hình TCP/IP cho các DHCP Client.
-- DHCP Client nằm ở hệ điều hành, sử dụng port 68, yêu cầu DHCP Server cấp thông tin cấu hình TCP/IP
+- DHCP Client nằm ở hệ điều hành, sử dụng port 68, yêu cầu DHCP Server cung cấp thông tin cấu hình TCP/IP
 * Mô hình Client - Server của dịch vụ DHCP
 - Đầu tiên DHCP Client gửi DHCP Discover Message theo kiểu UDP Broadcast đến tất cả các máy trong mạng để tìm DHCP Server.
-- DHCP Server sau khi tiếp nhận DHCP Discover, nó sẽ gửi DHCP Offer Message theo kiểu UDP Broadcast chứa các thông tin 
+- DHCP Server sau khi tiếp nhận DHCP Discover, sẽ gửi DHCP Offer Message theo kiểu UDP Broadcast chứa các thông tin 
   địa chỉ ip cấp cho Client, subnet mask, thời gian hiệu lực của địa chỉ ip, địa chỉ ip của DHCP Server.
-- DHCP Client sau khi nhận được DHCP Offer, nó sẽ gửi DHCP Request yêu cầu DHCP Server gửi địa chỉ DNS và địa chỉ Gateway.
-- Cuối cùng DHCP Server sẽ gửi lại DHCP Ack cho DHCP Client gồm địa chỉ DNS và địa chỉ Gateway.
+- DHCP Client sau khi nhận được DHCP Offer, sẽ gửi DHCP Request Message yêu cầu DHCP Server gửi địa chỉ DNS và địa chỉ Gateway.
+- Cuối cùng DHCP Server sẽ gửi lại DHCP Ack Message cho DHCP Client gồm địa chỉ DNS và địa chỉ Gateway.
