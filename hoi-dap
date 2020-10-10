@@ -78,7 +78,7 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Tầng LLC là bộ thư viện gồm những thủ tục và hàm. Mỗi card mạng có công nghệ mạng khác nhau
   nên tầng LLC có nhiệm vụ giúp cho nghi thức ở tầng network tương tác với tầng MAC (Logical Link Control)
   
- 11. Trình bày dịch vụ mạng DHCP:
+11. Trình bày dịch vụ mạng DHCP:
 - Trong hệ thống mạng có rất nhiều thiết bị, mỗi thiết bị cần phải thiết lập địa chỉ ip, subnet mask, địa chỉ router, địa chỉ DNS.
   Cho nên DHCP được dùng để cấp địa chỉ ip tự động cho các thiết bị trong hệ thống mạng.
 - DHCP: Dynamic Host Configuration Protocol
