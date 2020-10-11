@@ -117,3 +117,22 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
   + NS record: lưu thông tin của DNS server quản lý zone
   + SOA record: lưu thông tin của toàn bộ zone
 - Phân giải tên ra địa chỉ ip: truy vấn đệ quy và truy vấn tuần tự.
+
+13. Lập trình ứng dụng mạng:
+- Ứng dụng được xây dựng trên tầng Application.
+- Gọi những nghi thức ở tầng Transport là TCP hoặc UDP
+- Để viết ứng dụng mạng, phải dùng bộ thư viện lập trình Windows Socket API
+- Bộ thư viện này cung cấp những thủ tục và hàm để truyền nhận dữ liệu bằng TCP hoặc UDP.
+- Mỗi máy tính có thể chạy nhiều ứng dụng mạng được định danh duy nhất bằng một số hiệu port.
+- Port 0 - 1023 dành cho những ứng dụng phổ thông trên mạng
+- Port 1024 - 49000 dành cho những ứng dụng đăng ký sử dụng
+- Port trên 49000 tự do sử dụng, dùng để cấp cho client
+- Socket được ví như cánh cửa để tầng ứng dụng và tầng vận chuyển giao tiếp dữ liệu với nhau.
+- Socket bao gồm port và địa chỉ ip.
+- Một kết nối gồm 2 socket ở đầu bên gửi và đầu bên nhận
+* Các bước để lập trình ứng dụng mạng:
+- Xác định kiến trúc mạng: Client - Server hay Peer to Peer
+- Xác định giao thức sử dụng ở tầng Transport là TCP hay UDP
+- Xác định port sử dụng ở server và client
+- Thiết kế giao thức tầng ứng dụng trao đổi dữ liệu giữa end - host
+- Lập trình ứng dụng mạng
