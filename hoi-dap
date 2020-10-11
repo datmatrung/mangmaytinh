@@ -91,3 +91,29 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
   địa chỉ ip cấp cho Client, subnet mask, thời gian hiệu lực của địa chỉ ip, địa chỉ ip của DHCP Server.
 - DHCP Client sau khi nhận được DHCP Offer, sẽ gửi DHCP Request Message yêu cầu DHCP Server gửi địa chỉ DNS và địa chỉ Gateway.
 - Cuối cùng DHCP Server sẽ gửi lại DHCP Ack Message cho DHCP Client gồm địa chỉ DNS và địa chỉ Gateway.
+
+12. Trình bày dịch vụ mạng DNS:
+- Lịch sử trước khi sử dụng DNS, người ta lưu trữ tên và địa chỉ ip bằng file hosts.
+  Nhưng mỗi lần cập nhật rất bất tiện vì phải cập nhật cho từng máy tính.
+  Cho nên dịch vụ mạng DNS ra đời, chỉ cần cập nhật trên DNS là xong.
+- DNS: Domain Name System
+- DNS là dịch vụ phân giải tên máy tính ra địa chỉ ip và ngược lại.
+  Bởi vì người dùng khó nhớ địa chỉ ip và địa chỉ ip có thể thay đổi.
+- DNS được ví như một hệ CSDL phân tán bởi vì mỗi node tạo thành một cây domain riêng
+  có name server, có một tên miền và có nhiều subdomain.
+- Mỗi địa chỉ ip chỉ tương ứng với một tên, nhưng một tên có thể tương ứng với nhiều ip.
+- DNS hoạt động ở tầng Application, port 53
+- DNS sử dụng cả hai nghi thức ở tầng Transport:
+  + UDP dùng để truy vấn (query) giữa Client - Server
+  + TCP dùng để cập nhật thông tin (zone transfer) giữa Primary NS và Secondary NS
+- Root server lưu trữ địa chỉ ip và tên của các DNS Server TLD (Top level database)
+- Mỗi DNS Server TLD lưu trữ địa chỉ ip và tên của các DNS Server Second level database
+- Zone domain là DNS server quản lý một vùng domain gồm domain và nhiều domain con.
+- Một số kiểu dữ liệu trong DNS server:
+  + A record: phân giải tên máy ra địa chỉ ip
+  + PTR record: phân giải địa chỉ ip ra tên máy
+  + CNAME record: lưu tên phụ, bí danh của một máy (alias)
+  + MX record: lưu thông tin của mail server dùng để nhận email
+  + NS record: lưu thông tin của DNS server quản lý zone
+  + SOA record: lưu thông tin của toàn bộ zone
+- Phân giải tên ra địa chỉ ip: truy vấn đệ quy và truy vấn tuần tự.
