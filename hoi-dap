@@ -136,3 +136,9 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Xác định port sử dụng ở server và client
 - Thiết kế giao thức tầng ứng dụng trao đổi dữ liệu giữa end - host
 - Lập trình ứng dụng mạng
+
+14. Nguyên lý cấu hình DNS server:
+- Nhập dữ liệu domain mà máy DNS đó quản lý: A, MX, CNAME, PTR, SOA, NS
+- Dạy cho DNS server biết hỏi ai khi bị truy vấn tên domain mà nó không quản lý.
+- Đối với chiều đi ra thì nó sẽ chuyển tiếp (forward) cho máy nằm ngoài internet.
+- Đối với chiều đi vô thì nó sẽ ủy thác (delegation) cho máy của miền con quản lý.
