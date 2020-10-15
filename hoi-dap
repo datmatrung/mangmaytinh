@@ -142,3 +142,10 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Dạy cho DNS server biết hỏi ai khi bị truy vấn tên domain mà nó không quản lý.
 - Đối với chiều đi ra thì nó sẽ chuyển tiếp (forward) cho máy nằm ngoài internet.
 - Đối với chiều đi vô thì nó sẽ ủy thác (delegation) cho máy của miền con quản lý.
+
+15. Tại sao trong mạng Ethernet có thể nghe lén thông tin?
+- Tùy theo thiết bị mạng được sử dụng (hub, switch, bridge, repeater) mà mức độ nghe lén được gói tin nhiều hay ít
+- Nhưng cơ chế chung là do các gói tin được gửi đến toàn bộ các máy trong cùng một mạng
+- Vì vậy tại một máy nếu sử dụng phần mềm có chức năng bắt gói tin và đọc gói tin theo đúng giao thức sử dụng gửi gói tin
+- Thì có thể đọc được thông tin trao đổi giữa các máy
+- Để tránh bị nghe lén trước khi gửi phải mã hóa gói tin.
