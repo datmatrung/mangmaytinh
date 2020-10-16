@@ -149,3 +149,25 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Vì vậy tại một máy nếu sử dụng phần mềm có chức năng bắt gói tin và đọc gói tin theo đúng giao thức sử dụng gửi gói tin
 - Thì có thể đọc được thông tin trao đổi giữa các máy
 - Để tránh bị nghe lén trước khi gửi phải mã hóa gói tin.
+
+16. Trình bày và giải thích tóm tắt những thành phần cơ bản trong một hệ thống mạng máy tính ?
+* Thành phần bên ngoài: 
+- Máy tính, laptop, máy in và các thiết bị trong hệ thống mạng
+- Phương tiện kết nối: cáp, sóng vô tuyến
+- Thiết bị liên mạng: router, switch, bridge, hub, repeater, access point
+* Thành phần bên trong:
+- Dịch vụ mạng: Web, Mail, FTP…
+- Giao thức: HTTP, FTP, TCP, IP, PPP…
+- Phương thức truyền dữ liệu: Chuyển mạch mạch, chuyển mạch gói
+
+17. Trình bày các cách để vượt qua sự ngăn chặn truy cập tới một trang web ?
+- Sử dụng VPN truy cập website
+- Sử dụng trình duyệt Opera 
+- Đổi IP sang quốc gia khác 
+- Truy cập web bằng IP thay vì URL 
+- Sử dụng Proxy 
+- Sử dụng trình duyệt TOR 
+- Sử dụng DNS Public của nhà cung cấp dịch vụ Internet
+- Thiết lập Proxy của trình duyệt bằng tay 
+- Chỉnh sửa file hosts 
+- Sử dụng SSH Tunnels
