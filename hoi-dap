@@ -171,3 +171,10 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Thiết lập Proxy của trình duyệt bằng tay 
 - Chỉnh sửa file hosts 
 - Sử dụng SSH Tunnels
+
+18. So sánh router và switch:
+- Về tốc độ: switch nhanh hơn router (vì gói dữ liệu ở router phức tạp hơn khung dữ liệu ở switch).
+- Đối với mô hình OSI: router hoạt động ở tầng network, còn switch ở tầng datalink.
+- Về địa chỉ sử dụng: router sử dụng địa chỉ IP, còn switch sử dụng địa chỉ MAC.
+- Đối với gói tin broadcast: router chặn được gói tin broadcast, còn switch không chặn được.
+- Về tính bảo mật: router an toàn hơn switch.
