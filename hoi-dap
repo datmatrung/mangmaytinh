@@ -178,3 +178,11 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Về địa chỉ sử dụng: router sử dụng địa chỉ IP, còn switch sử dụng địa chỉ MAC.
 - Đối với gói tin broadcast: router chặn được gói tin broadcast, còn switch không chặn được.
 - Về tính bảo mật: router an toàn hơn switch.
+
+19. So sánh SMTP với HTTP:
+- Cả hai giao thức đều được sử dụng để gửi file giữa các máy tính.
+- HTTP chuyển file hoặc đối tượng từ web server tới web client.
+- SMTP chuyển file và thông điệp thư điện tử giữa các mail server.
+- Khi truyền file, cả hai giao thức cùng sử dụng kết nối liên tục.
+- HTTP là giao thức kéo, bên nhận thiết lập kết nối TCP và kéo dữ liệu từ server về.
+- SMTP là giao thức đẩy, bên gửi thiết lập kết nối TCP và đẩy dữ liệu lên server. 
