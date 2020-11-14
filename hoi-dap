@@ -186,3 +186,7 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Khi truyền file, cả hai giao thức cùng sử dụng kết nối liên tục.
 - HTTP là giao thức kéo, bên nhận thiết lập kết nối TCP và kéo dữ liệu từ server về.
 - SMTP là giao thức đẩy, bên gửi thiết lập kết nối TCP và đẩy dữ liệu lên server. 
+20. Thiết kế sơ đồ mạng:
+- Các máy tính trong cùng một phòng sẽ kết nối vào một switch.
+- Các switch của mỗi phòng sẽ kết nối vào một switch tổng.
+- Switch tổng sẽ kết nối với router để ra internet.
