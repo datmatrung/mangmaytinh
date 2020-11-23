@@ -153,12 +153,9 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Sử dụng trình duyệt Opera 
 - Đổi IP sang quốc gia khác 
 - Truy cập web bằng IP thay vì URL 
-- Sử dụng Proxy 
-- Sử dụng trình duyệt TOR 
 - Sử dụng DNS Public của nhà cung cấp dịch vụ Internet
-- Thiết lập Proxy của trình duyệt bằng tay 
+- Thiết lập Proxy của trình duyệt
 - Chỉnh sửa file hosts 
-- Sử dụng SSH Tunnels
 
 18. So sánh router và switch:
 - Về tốc độ: switch nhanh hơn router (vì gói dữ liệu ở router phức tạp hơn khung dữ liệu ở switch).
