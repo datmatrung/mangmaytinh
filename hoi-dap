@@ -186,6 +186,6 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Bên nhận cộng 4 dãy số lại nếu tổng toàn số 1 thì dữ liệu nhận được là đúng
 - Nếu tổng có bất kỳ số 0 nào thì dữ liệu nhận được là sai.
 
-22. Trình bày các đặc tính và công năng của repeater, hub, bridge, switch, router, modem?
-* Repeater dùng để khuếch đại tín hiệu để truyền đi xa hơn
-
+22. Cho biết sự khác nhau giữa POP và IMAP ?
+- Đối với POP: tất cả những lá thư sau khi được gửi từ mail server và lưu trữ trên mail client thì sẽ không còn trên mail server.
+- Đối với IMAP: đồng bộ hộp thư ở trên mail client và mail server. Nếu ta thay đổi (thêm, xóa, sửa) trên mail client thì trên mail server cũng thay đổi theo.
