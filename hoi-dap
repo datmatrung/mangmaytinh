@@ -178,10 +178,14 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Switch tổng sẽ kết nối với router để ra internet.
 
 21. Tự cho ví dụ một dãy 18 bit dữ liệu và tính checksum cho dãy bit đó.
-Ta có dãy bit: 110110 111000 001011 chia thành ba dãy 6 bit
-Sau đó cộng ba dãy bit lại ta được 111010
-Ta lấy bù một của 111010 được checksum là 000101
-Theo phương pháp checksum thì bên nhận làm sao biết dãy bit là đúng hay sai?
-Bên gửi sẽ gửi ba dãy 6 bit và checksum cho bên nhận
-Bên nhận cộng 4 dãy số lại nếu tổng toàn số 1 thì dữ liệu nhận được là đúng
-Nếu tổng có 1 số 0 thì dữ liệu nhận được là sai.
+- Ta có dãy bit: 110110 111000 001011 chia thành ba dãy 6 bit
+- Sau đó cộng ba dãy bit lại ta được 111010
+- Ta lấy bù một của 111010 được checksum là 000101
+* Theo phương pháp checksum thì bên nhận làm sao biết dãy bit là đúng hay sai?
+- Bên gửi sẽ gửi ba dãy 6 bit và checksum cho bên nhận
+- Bên nhận cộng 4 dãy số lại nếu tổng toàn số 1 thì dữ liệu nhận được là đúng
+- Nếu tổng có bất kỳ số 0 nào thì dữ liệu nhận được là sai.
+
+22. Trình bày các đặc tính và công năng của repeater, hub, bridge, switch, router, modem?
+* Repeater dùng để khuếch đại tín hiệu để truyền đi xa hơn
+
