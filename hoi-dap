@@ -189,3 +189,10 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 22. Cho biết sự khác nhau giữa POP và IMAP ?
 - Đối với POP: tất cả những lá thư sau khi được gửi từ mail server và lưu trữ trên mail client thì sẽ không còn trên mail server.
 - Đối với IMAP: đồng bộ hộp thư ở trên mail client và mail server. Nếu ta thay đổi (thêm, xóa, sửa) trên mail client thì trên mail server cũng thay đổi theo.
+
+23. Cho biết các độ trễ (delay) của quá trình gởi gói tin từ một máy ở network 1 đến network 2, hai network này kết nối với nhau bằng hai router ?
+* Độ trễ là thời gian tiêu hao khi gửi một gói tin từ mạng này sang mạng kia. Có bốn loại độ trễ:
+- Độ trễ do tốc độ truyền của card mạng từ máy tính ra đường mạng (transmission delay)
+- Độ trễ do xử lý gói tin tại router (nodal processing delay)
+- Độ trễ do gói tin phải xếp hàng đợi trước khi được đẩy ra khỏi router (queueing delay)
+- Độ trễ do đường truyền khi gói tin truyền từ router này sang router kia (propagation delay)
