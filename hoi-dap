@@ -196,3 +196,14 @@ Subnet 5:	203.168.30.112/28	203.168.30.127/28	203.168.30.113/28 - 203.168.30.126
 - Độ trễ do xử lý gói tin tại router (nodal processing delay)
 - Độ trễ do gói tin phải xếp hàng đợi trước khi được đẩy ra khỏi router (queueing delay)
 - Độ trễ do đường truyền khi gói tin truyền từ router này sang router kia (propagation delay)
+
+24. Trình bày nguyên lý hoạt động của nghi thức định tuyến Distance Vector và Link State
+* Nghi thức định tuyến Distance Vector:
+- Khi mới khởi động, router sẽ có một bảng định tuyến mặc định tương ứng với những đường mạng kết nối trực tiếp vào nó mà không cần học gì cả.
+- Cứ mỗi chu kỳ 30 giây, mỗi router sẽ liên lạc với những router lân cận để trao đổi nội dung bảng định tuyến với nhau và cập nhật nội dung vào bảng định tuyến của chúng.
+- Cứ như vậy thông tin sẽ được lan truyền từ router này sang router khác. Sau một khoảng thời gian, tất cả các router sẽ tạo lập thành công bảng định tuyến.
+* Nghi thức định tuyến Link State:
+- Khi mới khởi động, router sẽ có một đồ thị hình cây gồm các node là những đường mạng và router lân cận kết nối trực tiếp với nó.
+- Sau đó các router sẽ liên lạc, trao đổi thông tin với nhau bằng cách copy nguyên cây đồ thị cho những router khác.
+- Từ đó mỗi router sẽ xây dựng được một cây đồ thị của hệ thống mạng.
+- Sau đó, router sẽ chạy một thuật toán để tìm con đường đi tốt nhất đến những đường mạng khác. Và cuối cùng xây dựng được một bảng định tuyến.
